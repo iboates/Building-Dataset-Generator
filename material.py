@@ -46,7 +46,7 @@ class Material:
 			                   format(self.name, map_type.capitalize()))
 			_images = [x.filepath for x in bpy.data.images]
 			return bpy.data.images[_images.index('//Textures'
-			                                     '\\{}\\{}.png'.format(self.name,
+			                                     '/{}/{}.png'.format(self.name,
 			                                                               map_type))]
 		except Exception as e:
 			print('Failed to load {} texture of {}'.format(map_type, self.name))
